@@ -2,7 +2,15 @@
 
 class App{
 	public function __construct(){
-		echo "OK!";
+		$url = $this->parseURL();
+		var_dump($_GET);
+	}
+
+	public function parsseURL(){
+		 if (isset($_GET['url']) ) {
+		 	$url = $_GET['url'];
+		 	return $url;
+		 }
 	}
 }
 
