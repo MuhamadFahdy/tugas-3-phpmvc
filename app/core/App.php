@@ -6,12 +6,12 @@ class App{
 		var_dump($_GET);
 	}
 
-	public function parsseURL(){
+	public function parseURL(){
 		 if (isset($_GET['url']) ) {
 		 	$url = $_GET['url'];
-		 	return $url;
+		 	return $url; 
 		 }
 	}
 }
 
- ?>
+ ?> 
