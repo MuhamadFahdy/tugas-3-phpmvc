@@ -4,7 +4,7 @@ class Mahasiswa_model{
 	private $dbh; //databse handler
 	private $stmt; //untuk menampung statemen database
 
-	public function __constuct(){
+	public function __construct(){
 		//data source name
 		$dsn = 'mysql:host=localhost;dbname=phpmvc';
 
