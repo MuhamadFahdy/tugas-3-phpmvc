@@ -1,6 +1,6 @@
 <?php 
 
-class Databse{
+class Database{
 	private $host = DB_HOST;
 	private $user = DB_USER;
 	private $pass = DB_PASS;
@@ -11,11 +11,11 @@ class Databse{
 
 	public function __construct(){
 		//data source name
-		$dsn = 'mysql:host='.$this->host.';dbname='.$this->db_name;
+		$dsn = 'mysql:host='. $this->host .';dbname='. $this->db_name;
 
 		$option =[
 			PDO::ATTR_PERSISTENT => true,
-			PDO::ATTR_ERRORMODE => PDO::ERRMODE_EXCEPTION
+			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 		];
 
 		try{
@@ -26,7 +26,7 @@ class Databse{
 	}
 
 	public function query($query){
-		$this->stmt = $this->dbh->prepare($quer);
+		$this->stmt = $this->dbh->prepare($query);
 	} 
 
 	public function bind($param,$value,$type = null){
