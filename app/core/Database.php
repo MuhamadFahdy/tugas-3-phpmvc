@@ -42,7 +42,7 @@ class Database{
 					$type = PDO::PARAM_NUUL;
 					break;
 				default :
-					$type = PDO::PARRAM_STR;
+					$type = PDO::PARAM_STR;
 			}
 		}
 		$this->stmt->bindValue($param,$value,$type);
