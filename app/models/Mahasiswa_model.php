@@ -15,27 +15,6 @@ class Mahasiswa_model{
 		}
 	}
 
-	// private $mhs = [
-	// 	[
-	// 		"nama" => "Muhamad Fahdy",
-	// 		"nrp" => "173040030",
-	// 		"email" => "didi@gmail.com",
-	// 		"jurusan" => "Teknik Informatika"
-	// 	],
-	// 	[
-	// 		"nama" => "Adam A",
-	// 		"nrp" => "173040015",
-	// 		"email" => "adam@gmail.com",
-	// 		"jurusan" => "Teknik Informatika"
-	// 	],
-	// 	[
-	// 		"nama" => "diki",
-	// 		"nrp" => "173040035",
-	// 		"email" => "diki@gmail.com",
-	// 		"jurusan" => "Teknik Informatika"
-	// 	]
-	// ];
-
 	public function getAllMahasiswa()
 	{
 		$this->stmt = $this->dbh->prepare('SELECT * FROM mahasiswa');
