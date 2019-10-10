@@ -18,7 +18,7 @@
 		<div class="col-lg-6">
 			<form action="<?= BASEURL; ?>/mahasiswa/cari" method="post">
 			<div class="input-group mb-3">
-				<input type="text" class="form-control" placeholder="Cari mahasiswa..." name="keyword " id="keyword" autocomplate="off" >
+				<input type="text" class="form-control" placeholder="Cari mahasiswa..." name="keyword" id="keyword" autocomplate="off" >
 				<div class="input-group-append">
 					<button class="btn btn-primary" type="submit" id="tombolCari">Cari</button>
 				</div>
